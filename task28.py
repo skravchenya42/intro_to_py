@@ -1,6 +1,8 @@
 def sum(a, b):
-    if a == 0 or b == 0:
-        return a+b
+    if a == 0:
+        return b
+    elif  b == 0:
+        return a
     elif a <= b:
         return sum(a-1, b+1)
     else:
